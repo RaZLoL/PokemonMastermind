@@ -1,16 +1,17 @@
-# This is a sample Python script.
+import tkinter as tk
 
-# Press Maiusc+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
+window = tk.Tk()
+window.geometry('800x600+200+200')
+window.title('PokemonMastermind by RaZ')
+window.config(bg='black')
+
+label01 = tk.Label(window, bg='white', width=20, text='empty')
+label01.pack()
+
+top_frame = tk.Frame(window)
+# top_frame.grid(row=0, column=0)
+
+window.mainloop()
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
 
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
